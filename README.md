@@ -46,7 +46,7 @@ GET https://khain.app/api/translate
 ### 🔐 Authentication
 
 This API requires a Bearer token for authorization. Make sure to replace `your-secret-token` with your actual token.
-![Get The Token](https://khain.app/account#access-token)  
+[Get The Token](https://khain.app/account#access-token)
 
 ### 🧾 Request Parameters
 
