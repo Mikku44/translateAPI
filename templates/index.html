@@ -24,43 +24,198 @@
     <div class="max-w-3xl mt-10 w-full">
         <h1 class="text-xl  mb-6">Language Translation Options</h1>
 
-        <div class="overflow-x-auto ">
-            <table class="min-w-full  bg-white shadow-md rounded-lg overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
                 <thead class="bg-gray-100 border-b">
                     <tr>
                         <th class="py-3 px-6 text-left text-sm font-medium text-gray-700">Code</th>
-                        <th class="py-3 px-6 text-left text-sm font-medium text-gray-700">Translation</th>
+                        <th class="py-4 px-6 text-left text-sm font-medium text-gray-700">Translation</th>
                         <th class="py-3 px-6 text-left text-sm font-medium text-gray-700">Description</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
+                    <!-- Existing Pairs -->
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6 text-sm font-medium text-gray-900">th - en</td>
                         <td class="py-4 px-6 text-sm text-gray-700">Thai to English</td>
-                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai language to English</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to English</td>
                     </tr>
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6 text-sm font-medium text-gray-900">en - th</td>
                         <td class="py-4 px-6 text-sm text-gray-700">English to Thai</td>
-                        <td class="py-4 px-6 text-sm text-gray-500">Translate from English language to Thai</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from English to Thai</td>
                     </tr>
+
+                    <!-- Newly Added Pairs -->
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6 text-sm font-medium text-gray-900">th - zh</td>
                         <td class="py-4 px-6 text-sm text-gray-700">Thai to Chinese</td>
-                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai language to Chinese</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to Simplified Chinese</td>
                     </tr>
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6 text-sm font-medium text-gray-900">zh - th</td>
                         <td class="py-4 px-6 text-sm text-gray-700">Chinese to Thai</td>
-                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Chinese language to Thai</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Chinese to Thai</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900">th - ja</td>
+                        <td class="py-4 px-6 text-sm text-gray-700">Thai to Japanese</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to Japanese</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900">th - ar</td>
+                        <td class="py-4 px-6 text-sm text-gray-700">Thai to Arabic</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to Arabic</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900">th - ru</td>
+                        <td class="py-4 px-6 text-sm text-gray-700">Thai to Russian</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to Russian</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900">th - de</td>
+                        <td class="py-4 px-6 text-sm text-gray-700">Thai to German</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to German</td>
                     </tr>
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6 text-sm font-medium text-gray-900">th - fr</td>
                         <td class="py-4 px-6 text-sm text-gray-700">Thai to French</td>
-                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai language to French</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to French</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900">th - es</td>
+                        <td class="py-4 px-6 text-sm text-gray-700">Thai to Spanish</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to Spanish</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900">th - vi</td>
+                        <td class="py-4 px-6 text-sm text-gray-700">Thai to Vietnamese</td>
+
+                        <td class="py-4 px-6 text-sm text-gray-500">Translate from Thai to Vietnamese</td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <div class="font-medium text-gray-700 mb-1">API PATH</div>
+        <div class="rounded-sm my-5 px-2 py-2 w-fit bg-gray-100 text-serif">
+            /translate?<span class="text-green-400">lang</span>=<span class="text-red-400">th</span>&<span
+                class="text-green-400">to</span>=<span class="text-red-400">en</span>&<span
+                class="text-green-400">text</span>=<span class="text-red-400">สวัสดี,เราดีใจที่ได้เจอคุณ</span>
+        </div>
+        <div class="space-y-6 my-5">
+            <!-- cURL Example -->
+            <div>
+                <div class="font-medium text-gray-700 mb-1">With cURL</div>
+                <div class="rounded-md bg-gray-100 p-4 text-sm font-mono text-gray-800 overflow-x-auto max-w-3xl">
+                    <pre>curl -X 'GET' \
+            'https://khain.app/api/translate?text=Hello&lang=en&to=th' \
+            -H 'Accept: application/json' \
+            -H 'Authorization: Bearer your-secret-token'</pre>
+                </div>
+            </div>
+
+            <!-- Python Example -->
+            <div>
+                <div class="font-medium text-gray-700 mb-1">With Python</div>
+                <div class="rounded-md bg-gray-100 p-4 text-sm font-mono text-gray-800 overflow-x-auto max-w-3xl">
+                    <pre>import requests
+          
+          url = "https://khain.app/api/translate"
+          params = {
+              "text": "Hello",
+              "lang": "en",
+              "to": "th"
+          }
+          headers = {
+              "Accept": "application/json",
+              "Authorization": "Bearer your-secret-token"
+          }
+          
+          response = requests.get(url, params=params, headers=headers)
+          print(response.json())</pre>
+                </div>
+            </div>
+
+            <!-- Node.js Example -->
+            <div>
+                <div class="font-medium text-gray-700 mb-1">With Node.js</div>
+                <div class="rounded-md bg-gray-100 p-4 text-sm font-mono text-gray-800 overflow-x-auto max-w-3xl">
+                    <pre>const fetch = require('node-fetch');
+          
+          const url = new URL('https://khain.app/api/translate');
+          url.searchParams.append('text', 'Hello');
+          url.searchParams.append('lang', 'en');
+          url.searchParams.append('to', 'th');
+          
+          fetch(url, {
+            method: 'GET',
+            headers: {
+              'Accept': 'application/json',
+              'Authorization': 'Bearer your-secret-token'
+            }
+          })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));</pre>
+                </div>
+            </div>
+
+            <!-- JavaScript (Browser) Example -->
+            <div>
+                <div class="font-medium text-gray-700 mb-1">With JavaScript (Browser)</div>
+                <div class="rounded-md bg-gray-100 p-4 text-sm font-mono text-gray-800 overflow-x-auto max-w-3xl">
+                    <pre>const url = new URL('https://khain.app/api/translate');
+          url.searchParams.append('text', 'Hello');
+          url.searchParams.append('lang', 'en');
+          url.searchParams.append('to', 'th');
+          
+          fetch(url, {
+            method: 'GET',
+            headers: {
+              'Accept': 'application/json',
+              'Authorization': 'Bearer your-secret-token'
+            }
+          })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));</pre>
+                </div>
+            </div>
+            <!-- React/Next.js Example -->
+            <div>
+                <div class="font-medium text-gray-700 mb-1">With React.js/Next.js or other</div>
+                <div class="rounded-md bg-gray-100 p-4 text-sm font-mono text-gray-800 overflow-x-auto max-w-3xl">
+                    <pre>const response = await fetch(
+                `/api/translate?lang=th&to=en&text=สวัสดี`,
+                    {
+                      headers: {
+                    'Authorization': `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+                  },                        }
+              );
+                  const data = await response.json();</pre>
+                </div>
+            </div>
+        </div>
+        <div class="text-div">
+            <div class="">Translate text between languages</div>
+            <div class="">Parameters:</div>
+            <div class="">- text: The text to translate (required)</div>
+            <div class="">- lang: Source language code (example: 'th')</div>
+            <div class="">- to: Target language code (example: 'en')</div>
+            <div class="">- Authorization: Bearer token (required in header)</div>
         </div>
     </div>
 </body>
